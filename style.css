@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #fce4ec;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 100px; /* Diameter lingkaran */
+  height: 100px; /* Diameter lingkaran */
+  border-radius: 50%; /* Membuat lingkaran sempurna */
+  object-fit: cover; /* Gambar mengisi lingkaran dan dipotong jika perlu */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profession {
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.contact {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.profile p {
+  line-height: 1.7;
+}
+
+.experience ul,
+.education ul,
+.skills ul,
+.languages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience li,
+.education li,
+.skills li,
+.languages li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.experience li:last-child,
+.education li:last-child,
+.skills li:last-child,
+.languages li:last-child {
+  border-bottom: none;
+}
+
+.experience h3 {
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+.experience .company {
+  font-weight: normal;
+  color: #777;
+  font-style: italic;
+}
+
+.experience p {
+  margin-left: 20px;
+  color: #555;
+}
+
+.education h3 {
+  color: #27ae60;
+  margin-bottom: 5px;
+}
+
+.education p {
+  margin-left: 20px;
+  color: #555;
+}
+
+.skills li,
+.languages li {
+  display: inline-block;
+  background-color: #e0f2f7;
+  color: #1a237e;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.skills li:last-child,
+.languages li:last-child {
+  margin-right: 0;
+}
+
+.toggle-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95em;
+  display: block;
+  margin-top: 15px;
+}
+
+.toggle-button:hover {
+  background-color: #218838;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 0.8em;
+}
+
+/* Efek Fade-In (akan diatur oleh JavaScript) */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
