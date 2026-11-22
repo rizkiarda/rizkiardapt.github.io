@@ -1,116 +1,805 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Pribadi</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizki Arda - Curriculum Vitae & Portfolio</title>
+  <meta name="description" content="Website CV & Portofolio Online Resmi Rizki Arda - Mobile Developer & UI/UX Designer, Mahasiswa UNU Kalbar">
+  <meta name="author" content="Rizki Arda">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/saya_me.jpeg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="saya_me.jpeg" alt="Logo CV Damai Sentosa" class="logo" />
-            <h1>Rizki Arda</h1>
-            <p class="profession">Design Grafis | Figma | PSD | Indesign</p>
-            <p class="contact">
-                rizkiarda29@gmail.com | +6289512345123 |
-                <a href="[Akun LinkedIn Kamu (jika ada)]" target="_blank">LinkedIn</a> |
-                <a href="[Akun Github Kamu (jika ada)]" target="_blank">Github</a>
-            </p>
-        </header>
-        <section class="profile fade-in">
-            <h2>Ringkasan Profil</h2>
-            <p>
-                Jelajahi portofolio kami untuk melihat bagaimana kami telah membantu
-                berbagai bisnis dan individu mencapai tujuan mereka melalui kekuatan
-                desain. Kami percaya bahwa desain yang baik adalah investasi, dan kami
-                siap menjadi mitra kreatif Anda dalam meraih kesuksesan.
-            </p>
-        </section>
-        <section class="experience">
-            <h2>Profil Singkat</h2>
-            <ul>
-                <li class="fade-in">
-                    <h3>
-                        Program Nasional POP 2021 |
-                        <span class="company">Yayasan Forum Indonesia Menulis</span> | 2021-2022
-                    </h3>
-                    <p>
-                        Layout buku
-                        Layout Majalah
-                        Design Cover Buku
-                        Tutor Pelatihan Freelancer Layout Buku
-                        Divisi Humas antar Mentor dan Yayasan
-                    </p>
-                </li>
-                <li class="fade-in hidden">
-                    <h3>
-                        [Project Perusahaan 2] |
-                        <span class="company">[Nama Perusahaan 2]</span> |
-                    </h3>
-                    <p>[Deskripsikan tanggung jawab dan pencapaian di perusahaan 2.]</p>
-                    <ul>
-                        <li>[Detail tanggung jawab/pencapaian 1]</li>
-                        <li>[Detail tanggung jawab/pencapaian 2]</li>
-                    </ul>
-                </li>
-                <li class="fade-in hidden">
-                    <h3>
-                        [Project Perusahaan 3] |
-                        <span class="company">[Nama Perusahaan 3]</span> |
-                    </h3>
-                    <p>[Deskripsikan tanggung jawab dan pencapaian di perusahaan 3.]</p>
-                    <ul>
-                        <li>[Detail tanggung jawab/pencapaian 1]</li>
-                        <li>[Detail tanggung jawab/pencapaian 2]</li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="toggle-button">Tampilkan Lebih Banyak Pengalaman</button>
-        </section>
-        <section class="education fade-in">
-            <h2>Pendidikan</h2>
-            <ul>
-                <li>
-                    <h3>
-                        <span class="institution">UNU Kalbar</span>
-                    </h3>
-                    <p>Fokus studi:</p>
-                </li>
-                <li>
-                    <h3>Sertifikat "Introduction to HTML oleh Sololearn</h3>
-                    <a href="https://www.sololearn.com/certificates/CC-ZMMV6DO4" style="display: block; text-align: center;">
-                        <img src="int_web.jpg" alt="Certificate from Sololearn" width="350" height="220" style="display: block; margin: 0 auto;">
-                      </a>
-                      <h3>Sertifikat Introduction to Java oleh Sololearn</h3>
-                    <a href="https://www.sololearn.com/certificates/CC-2UYRY022" style="display: block; text-align: center;">
-                        <img src="int_java.jpg" alt="Certificate from Sololearn" width="350" height="220" style="display: block; margin: 0 auto;">
-                      </a>
-                </li>
-            </ul>
-        </section>
-        <section class="skills fade-in">
-            <h2>Keahlian</h2>
-            <ul>
-                <li>Figma</li>
-                <li>Adobe Photoshop (PSD)</li>
-                <li>Adobe Indesign</li>
-                <li>UI/UX Designer</li>
-                <li>Java</li>
-            </ul>
-        </section>
-        <section class="languages fade-in">
-            <h2>Bahasa</h2>
-            <ul>
-                <li>Bahasa Indonesia (Aktif)</li>
-                <li>Bahasa Inggris (Intermediate)</li>
-            </ul>
-        </section>
-        <footer>
-            <p>&copy; 2025 Rizki Arda. Hak Cipta Dilindungi.</p>
-        </footer>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen bg-grid-pattern transition-colors duration-300 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Mobile Top Navbar -->
+  <header class="lg:hidden sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur border-b border-slate-200 dark:border-slate-800 px-4 py-3 flex items-center justify-between no-print">
+    <div class="flex items-center space-x-3">
+      <div class="w-9 h-9 rounded-full overflow-hidden ring-2 ring-indigo-500 shadow-md">
+        <img src="assets/images/saya_me.jpeg" alt="Rizki Arda" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h1 class="font-bold text-sm tracking-tight text-slate-900 dark:text-white">Rizki Arda</h1>
+        <p class="text-[11px] text-indigo-600 dark:text-indigo-400 font-medium">Mobile Developer & UI/UX</p>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="flex items-center space-x-2">
+      <!-- Dark mode button (Mobile) -->
+      <button id="theme-toggle" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Dark Mode">
+        <span id="theme-icon">
+          <i class="fa-solid fa-moon text-slate-700"></i>
+        </span>
+      </button>
+      <!-- Quick Print/Download CV -->
+      <button onclick="window.print()" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm transition flex items-center gap-1.5">
+        <i class="fa-solid fa-download text-xs"></i>
+        <span>PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+    <div class="flex flex-col lg:flex-row gap-8 items-start">
+
+      <!-- ========================================================
+           LEFT SIDEBAR: Profile Card (Mulan Inspired Left Column)
+           ======================================================== -->
+      <aside class="w-full lg:w-[380px] lg:sticky lg:top-8 flex-shrink-0">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden card-glow">
+          
+          <!-- Top Background Accent Ribbon -->
+          <div class="absolute -top-12 -right-12 w-36 h-36 bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+          <!-- Profile Photo & Status -->
+          <div class="relative w-36 h-36 mx-auto mb-6">
+            <div class="w-full h-full rounded-2xl overflow-hidden ring-4 ring-indigo-500/20 dark:ring-indigo-400/20 shadow-lg bg-slate-100">
+              <img src="assets/images/saya_me.jpeg" 
+                   alt="Foto Profil Rizki Arda" 
+                   class="w-full h-full object-cover">
+            </div>
+            <!-- Online Availability Badge -->
+            <div class="absolute -bottom-2 -right-2 bg-white dark:bg-slate-900 px-3 py-1 rounded-full shadow-md border border-slate-200 dark:border-slate-800 flex items-center space-x-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">Available</span>
+            </div>
+          </div>
+
+          <!-- Name & Dynamic Typing Subtitle -->
+          <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Rizki Arda</h2>
+            <div class="h-6 flex items-center justify-center text-sm font-medium text-indigo-600 dark:text-indigo-400 mt-1">
+              <span id="typing-text"></span>
+              <span class="typing-cursor text-indigo-600 dark:text-indigo-400">|</span>
+            </div>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="flex items-center justify-center space-x-2.5 mb-7">
+            <a href="https://github.com/rizkiarda" target="_blank" rel="noopener noreferrer" 
+               class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 dark:hover:text-white flex items-center justify-center transition-all shadow-sm" title="GitHub">
+              <i class="fa-brands fa-github text-lg"></i>
+            </a>
+            <a href="https://wa.me/6289512345123?text=Halo%20Rizki,%20saya%20tertarik%20dengan%20profil%20CV%20Anda" target="_blank" rel="noopener noreferrer" 
+               class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white flex items-center justify-center transition-all shadow-sm" title="WhatsApp (+6289512345123)">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+            <a href="mailto:rizkiarda29@gmail.com" 
+               class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-rose-600 hover:text-white dark:hover:bg-rose-600 dark:hover:text-white flex items-center justify-center transition-all shadow-sm" title="Email (rizkiarda29@gmail.com)">
+              <i class="fa-solid fa-envelope text-lg"></i>
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-slate-100 dark:border-slate-800 my-6"></div>
+
+          <!-- Bio Quick Details List -->
+          <div class="space-y-3.5 text-xs sm:text-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-slate-400 dark:text-slate-500 font-medium">Pendidikan</span>
+              <span class="font-semibold text-slate-700 dark:text-slate-200">UNU Kalbar (Sem. 7)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-400 dark:text-slate-500 font-medium">Program Studi</span>
+              <span class="font-semibold text-slate-700 dark:text-slate-200">Teknik Informatika</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-400 dark:text-slate-500 font-medium">Lokasi</span>
+              <span class="font-semibold text-slate-700 dark:text-slate-200">Kalimantan Barat, ID</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-400 dark:text-slate-500 font-medium">Email</span>
+              <span class="font-medium text-slate-700 dark:text-slate-200 text-[11px] truncate max-w-[170px]" title="rizkiarda29@gmail.com">rizkiarda29@gmail.com</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-slate-400 dark:text-slate-500 font-medium">Status</span>
+              <span class="font-semibold text-emerald-600 dark:text-emerald-400">Open for Work & Freelance</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3 no-print">
+            <!-- Download CV / Print -->
+            <button onclick="window.print()" 
+                    class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all flex items-center justify-center space-x-2 text-sm group">
+              <i class="fa-solid fa-cloud-arrow-down group-hover:-translate-y-0.5 transition-transform"></i>
+              <span>Download CV (PDF)</span>
+            </button>
+            
+            <!-- Contact Me Button -->
+            <button data-goto-tab="contact" 
+                    class="w-full py-3 px-4 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold transition-all flex items-center justify-center space-x-2 text-sm">
+              <i class="fa-regular fa-paper-plane text-xs"></i>
+              <span>Hubungi Saya</span>
+            </button>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- ========================================================
+           RIGHT MAIN CONTENT: Navigation Tabs & Tab Panes
+           ======================================================== -->
+      <section id="main-content" class="flex-1 w-full min-w-0">
+
+        <!-- Top Navigation Bar (Mulan Style Tabs) -->
+        <nav id="tab-navigation" class="bg-white dark:bg-slate-900 rounded-2xl p-2 shadow-lg shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 mb-6 sticky top-4 z-30 no-print">
+          <ul class="flex items-center justify-between sm:justify-start sm:space-x-2 overflow-x-auto">
+            <li>
+              <button class="nav-btn active flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400" data-tab="about">
+                <i class="fa-regular fa-user text-sm"></i>
+                <span>About</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-btn flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400" data-tab="resume">
+                <i class="fa-regular fa-file-lines text-sm"></i>
+                <span>Resume</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-btn flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400" data-tab="portfolio">
+                <i class="fa-solid fa-shapes text-sm"></i>
+                <span>Portfolio & Sertifikat</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-btn flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400" data-tab="contact">
+                <i class="fa-regular fa-paper-plane text-sm"></i>
+                <span>Contact</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ========================================================
+             TAB 1: ABOUT ME PANE
+             ======================================================== -->
+        <div id="tab-about" class="tab-pane active space-y-8">
+
+          <!-- Section: Bio Summary -->
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            <div class="flex items-center space-x-3 mb-5">
+              <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Ringkasan Profil</h3>
+            </div>
+            
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base mb-4">
+              Halo! Saya <strong>Rizki Arda</strong>, mahasiswa semester 7 jurusan Teknik Informatika di <strong>Universitas Nahdlatul Ulama Kalimantan Barat (UNU Kalbar)</strong>. Saya memadukan keahlian dalam <strong>Mobile Programming (Java & Flutter)</strong> dengan kreativitas visual pada <strong>UI/UX Design (Figma)</strong> dan <strong>Graphic & Layout Design</strong> (Photoshop & InDesign).
+            </p>
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+              Saya percaya bahwa perpaduan antara desain visual yang matang dan kode yang rapi adalah kunci menghadirkan pengalaman pengguna (*user experience*) yang luar biasa. Berpengalaman menangani proyek penerbitan nasional hingga aplikasi mobile dan desain antarmuka, saya selalu antusias berkolaborasi dalam proyek baru maupun peluang karir profesional.
+            </p>
+
+            <!-- Stat Counters (Mulan Fun Facts) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
+              <div class="text-center p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  <span class="counter-val" data-target="25">0</span>+
+                </div>
+                <div class="text-[11px] sm:text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Desain & Proyek</div>
+              </div>
+              <div class="text-center p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  <span class="counter-val" data-target="7">0</span>
+                </div>
+                <div class="text-[11px] sm:text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Semester Perkuliahan</div>
+              </div>
+              <div class="text-center p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  <span class="counter-val" data-target="100">0</span>%
+                </div>
+                <div class="text-[11px] sm:text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Dedikasi & Komitmen</div>
+              </div>
+              <div class="text-center p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  <span class="counter-val" data-target="2">0</span>
+                </div>
+                <div class="text-[11px] sm:text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">Sertifikasi Sololearn</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Keahlian & Layanan -->
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            <div class="flex items-center space-x-3 mb-6">
+              <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Bidang Keahlian</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <!-- Service 1 -->
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800/60 hover:border-indigo-200 dark:hover:border-indigo-800 transition">
+                <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4 text-xl">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Mobile Application Development</h4>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Pengembangan aplikasi mobile berbasis Java & Flutter untuk platform Android dengan fokus pada performa yang optimal dan kemudahan navigasi.
+                </p>
+              </div>
+
+              <!-- Service 2 -->
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800/60 hover:border-indigo-200 dark:hover:border-indigo-800 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-4 text-xl">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">UI/UX Design (Figma)</h4>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Perancangan antarmuka pengguna digital, wireframing, dan interactive prototype aplikasi mobile & web yang modern, estetis, dan user-friendly.
+                </p>
+              </div>
+
+              <!-- Service 3 -->
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800/60 hover:border-indigo-200 dark:hover:border-indigo-800 transition">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 dark:bg-pink-950/80 text-pink-600 dark:text-pink-400 flex items-center justify-center mb-4 text-xl">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Layout & Editorial Design (InDesign)</h4>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Tata letak buku, majalah, cover buku, dan media publikasi standar industri dengan Adobe InDesign, berpengalaman di program nasional.
+                </p>
+              </div>
+
+              <!-- Service 4 -->
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800/60 hover:border-indigo-200 dark:hover:border-indigo-800 transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 text-xl">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h4 class="font-bold text-base text-slate-900 dark:text-white mb-2">Graphic Design (Photoshop)</h4>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Desain grafis, manipulasi foto, banner promosi, dan aset visual berkualitas tinggi menggunakan Adobe Photoshop (PSD).
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ========================================================
+             TAB 2: RESUME PANE (Education, Experience & Skills)
+             ======================================================== -->
+        <div id="tab-resume" class="tab-pane space-y-8">
+
+          <!-- Education & Work Experience Timelines -->
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            <div class="flex items-center space-x-3 mb-8">
+              <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Riwayat & Pengalaman</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              
+              <!-- Left Column: Education -->
+              <div>
+                <h4 class="flex items-center space-x-2 text-base font-bold text-slate-900 dark:text-white mb-6">
+                  <i class="fa-solid fa-graduation-cap text-indigo-600 dark:text-indigo-400"></i>
+                  <span>Pendidikan Formal</span>
+                </h4>
+
+                <div class="relative pl-6 border-l-2 border-indigo-100 dark:border-indigo-950 space-y-8">
+                  <!-- Education 1 -->
+                  <div class="relative timeline-item">
+                    <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-900">
+                      2021 — Sekarang
+                    </span>
+                    <h5 class="font-bold text-sm text-slate-900 dark:text-white mt-2">S1 Teknik Informatika</h5>
+                    <p class="text-xs text-indigo-600 dark:text-indigo-400 font-medium mb-1.5">Universitas Nahdlatul Ulama Kalimantan Barat (UNU Kalbar)</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Mahasiswa aktif semester 7. Mendalami Pemrograman Mobile, Rekayasa Perangkat Lunak, Basis Data, serta Perancangan Antarmuka Pengguna (UI/UX).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Experience -->
+              <div>
+                <h4 class="flex items-center space-x-2 text-base font-bold text-slate-900 dark:text-white mb-6">
+                  <i class="fa-solid fa-briefcase text-indigo-600 dark:text-indigo-400"></i>
+                  <span>Pengalaman Profesional</span>
+                </h4>
+
+                <div class="relative pl-6 border-l-2 border-indigo-100 dark:border-indigo-950 space-y-8">
+                  <!-- Experience 1 -->
+                  <div class="relative timeline-item">
+                    <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-900">
+                      2021 — 2022
+                    </span>
+                    <h5 class="font-bold text-sm text-slate-900 dark:text-white mt-2">Layout Specialist & Tutor</h5>
+                    <p class="text-xs text-indigo-600 dark:text-indigo-400 font-medium mb-1.5">Program Nasional POP 2021 | Yayasan Forum Indonesia Menulis</p>
+                    <ul class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed list-disc list-inside space-y-1">
+                      <li>Bertanggung jawab dalam Layout Buku dan Layout Majalah nasional.</li>
+                      <li>Desain Cover Buku publikasi resmi.</li>
+                      <li>Tutor Pelatihan Freelancer Layout Buku.</li>
+                      <li>Divisi Hubungan Masyarakat (Humas) antar Mentor dan Yayasan.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Experience 2 -->
+                  <div class="relative timeline-item">
+                    <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-900">
+                      2022 — Sekarang
+                    </span>
+                    <h5 class="font-bold text-sm text-slate-900 dark:text-white mt-2">Freelance UI/UX & Graphic Designer</h5>
+                    <p class="text-xs text-indigo-600 dark:text-indigo-400 font-medium mb-1.5">Self-Employed / Remote</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Merancang prototipe aplikasi mobile di Figma, materi visual, dan tata letak grafis untuk beragam klien dan kebutuhan perkuliahan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Technical Skills Progress Bars -->
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            <div class="flex items-center space-x-3 mb-6">
+              <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Tingkat Keahlian</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
+              <!-- Skill: Figma & UI/UX -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">Figma & UI/UX Prototyping</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">92%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="92%" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Adobe InDesign (Layout) -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">Adobe InDesign (Book & Editorial Layout)</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">90%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="90%" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Adobe Photoshop (PSD) -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">Adobe Photoshop (Graphic & Cover Design)</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">88%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="88%" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Java & Mobile Programming -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">Java & Pemrograman Mobile (Android)</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">82%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="82%" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: HTML & Web Tech -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">HTML, CSS & Web Interface</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">85%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="85%" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill: Git & Version Control -->
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-semibold mb-1.5">
+                  <span class="text-slate-800 dark:text-slate-200">Git & GitHub</span>
+                  <span class="text-indigo-600 dark:text-indigo-400 font-mono">80%</span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div class="skill-bar-fill h-full bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full" data-percent="80%" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bahasa & Soft Skills -->
+            <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Kemampuan Bahasa</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <i class="fa-solid fa-language text-indigo-500 mr-1.5"></i>Bahasa Indonesia (Aktif / Native)
+                  </span>
+                  <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <i class="fa-solid fa-language text-indigo-500 mr-1.5"></i>Bahasa Inggris (Intermediate)
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Karakter & Soft Skills</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Komunikasi & Humas
+                  </span>
+                  <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Ketelitian Desain & Tipografi
+                  </span>
+                  <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Kolaborasi Tim & Mentoring
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ========================================================
+             TAB 3: PORTFOLIO & SERTIFIKAT PANE
+             ======================================================== -->
+        <div id="tab-portfolio" class="tab-pane space-y-6">
+
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            
+            <!-- Header & Filter Tabs -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+              <div class="flex items-center space-x-3">
+                <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Portofolio & Sertifikat</h3>
+              </div>
+
+              <!-- Filter Buttons -->
+              <div class="portfolio-filter flex flex-wrap gap-2">
+                <button class="portfolio-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-sm transition" data-filter="all">
+                  Semua
+                </button>
+                <button class="portfolio-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition" data-filter="cert">
+                  Sertifikat Resmi
+                </button>
+                <button class="portfolio-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition" data-filter="mobile">
+                  Mobile Apps
+                </button>
+                <button class="portfolio-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition" data-filter="design">
+                  UI/UX & Desain
+                </button>
+              </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <!-- Item 1: Sertifikat Java Sololearn -->
+              <div class="portfolio-item group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200/60 dark:border-slate-800 hover:shadow-lg transition-all duration-300" data-category="cert">
+                <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                  <img src="assets/images/int_java.jpg" 
+                       alt="Sertifikat Java Sololearn" 
+                       class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-600 text-white shadow">
+                    Sertifikasi Resmi
+                  </span>
+                </div>
+                <div class="p-5">
+                  <h4 class="font-bold text-base text-slate-900 dark:text-white mb-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                    Introduction to Java - Sololearn
+                  </h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                    Sertifikat resmi kompetensi dasar bahasa pemrograman Java: OOP, sintaks, struktur data dasar, dan algoritma.
+                  </p>
+                  <div class="flex items-center justify-between pt-3 border-t border-slate-200/50 dark:border-slate-800">
+                    <span class="text-[11px] font-mono text-slate-400">ID: CC-2UYRY022</span>
+                    <a href="https://www.sololearn.com/certificates/CC-2UYRY022" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+                      <span>Verifikasi</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Sertifikat HTML Sololearn -->
+              <div class="portfolio-item group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200/60 dark:border-slate-800 hover:shadow-lg transition-all duration-300" data-category="cert">
+                <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                  <img src="assets/images/int_web.jpg" 
+                       alt="Sertifikat HTML Sololearn" 
+                       class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-600 text-white shadow">
+                    Sertifikasi Resmi
+                  </span>
+                </div>
+                <div class="p-5">
+                  <h4 class="font-bold text-base text-slate-900 dark:text-white mb-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                    Introduction to HTML - Sololearn
+                  </h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                    Sertifikasi fondasi pengembangan web HTML5: struktur semantik dokumen, form interaktif, dan standar web modern.
+                  </p>
+                  <div class="flex items-center justify-between pt-3 border-t border-slate-200/50 dark:border-slate-800">
+                    <span class="text-[11px] font-mono text-slate-400">ID: CC-ZMMV6DO4</span>
+                    <a href="https://www.sololearn.com/certificates/CC-ZMMV6DO4" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+                      <span>Verifikasi</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Project Mobile App -->
+              <div class="portfolio-item group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200/60 dark:border-slate-800 hover:shadow-lg transition-all duration-300" data-category="mobile">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=800&q=80" 
+                       alt="Aplikasi Pemesanan Makanan" 
+                       class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-600 text-white shadow">
+                    Mobile App
+                  </span>
+                </div>
+                <div class="p-5">
+                  <h4 class="font-bold text-base text-slate-900 dark:text-white mb-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                    Food Delivery Mobile App
+                  </h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                    Aplikasi mobile pemesanan kuliner berbasis Android & Flutter dengan pelacakan lokasi dan keranjang belanja interaktif.
+                  </p>
+                  <div class="flex items-center justify-between pt-3 border-t border-slate-200/50 dark:border-slate-800">
+                    <span class="text-[11px] font-medium text-slate-400">Tugas Pemrograman Mobile</span>
+                    <button class="view-project-btn text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1" data-id="1">
+                      <span>Detail Proyek</span>
+                      <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: UI/UX & Layout Design POP -->
+              <div class="portfolio-item group bg-slate-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-200/60 dark:border-slate-800 hover:shadow-lg transition-all duration-300" data-category="design">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" 
+                       alt="Layout Buku & Majalah" 
+                       class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-600 text-white shadow">
+                    Editorial & Cover
+                  </span>
+                </div>
+                <div class="p-5">
+                  <h4 class="font-bold text-base text-slate-900 dark:text-white mb-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                    Layout Buku & Majalah POP 2021
+                  </h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+                    Desain cover buku dan tata letak majalah untuk Program Nasional POP bersama Yayasan Forum Indonesia Menulis.
+                  </p>
+                  <div class="flex items-center justify-between pt-3 border-t border-slate-200/50 dark:border-slate-800">
+                    <span class="text-[11px] font-medium text-slate-400">InDesign & Photoshop</span>
+                    <button class="view-project-btn text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1" data-id="4">
+                      <span>Detail Proyek</span>
+                      <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ========================================================
+             TAB 4: CONTACT PANE
+             ======================================================== -->
+        <div id="tab-contact" class="tab-pane space-y-6">
+
+          <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200/80 dark:border-slate-800/80 card-glow">
+            
+            <div class="flex items-center space-x-3 mb-6">
+              <span class="w-2.5 h-7 rounded-full bg-indigo-600"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Hubungi Saya</h3>
+            </div>
+            
+            <p class="text-slate-600 dark:text-slate-300 text-sm mb-8 leading-relaxed">
+              Tertarik bekerja sama, berdiskusi mengenai proyek aplikasi mobile, desain UI/UX, layout buku, atau ingin menyapa? Silakan hubungi langsung melalui kontak berikut:
+            </p>
+
+            <!-- Contact Information Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+              
+              <!-- Direct WhatsApp -->
+              <a href="https://wa.me/6289512345123?text=Halo%20Rizki%20Arda,%20saya%20melihat%20CV%20online%20Anda" target="_blank" rel="noopener noreferrer" 
+                 class="p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 hover:border-emerald-300 transition text-center group">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center mx-auto mb-2 text-lg shadow-sm">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <h5 class="font-bold text-xs text-slate-900 dark:text-white">WhatsApp Langsung</h5>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">+62 895-1234-5123</p>
+                <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 mt-2 inline-block group-hover:underline">Chat Sekarang &rarr;</span>
+              </a>
+
+              <!-- Direct Email -->
+              <a href="mailto:rizkiarda29@gmail.com" 
+                 class="p-4 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/50 hover:border-indigo-300 transition text-center group">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center mx-auto mb-2 text-lg shadow-sm">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h5 class="font-bold text-xs text-slate-900 dark:text-white">Email Pribadi</h5>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">rizkiarda29@gmail.com</p>
+                <span class="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 mt-2 inline-block group-hover:underline">Kirim Email &rarr;</span>
+              </a>
+
+              <!-- Location & Campus -->
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 text-center">
+                <div class="w-10 h-10 rounded-xl bg-slate-700 text-white flex items-center justify-center mx-auto mb-2 text-lg shadow-sm">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h5 class="font-bold text-xs text-slate-900 dark:text-white">Kampus / Domisili</h5>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">UNU Kalbar, Pontianak</p>
+                <span class="text-[11px] font-medium text-slate-400 mt-2 inline-block">Waktu: WIB (GMT+7)</span>
+              </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="space-y-4 pt-4 border-t border-slate-100 dark:border-slate-800 no-print">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Nama Anda</label>
+                  <input type="text" id="contact-name" required placeholder="cth: Budi Santoso"
+                         class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400">
+                </div>
+                <div>
+                  <label for="contact-email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Email Anda</label>
+                  <input type="email" id="contact-email" required placeholder="budi@example.com"
+                         class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Subjek / Topik</label>
+                <input type="text" id="contact-subject" placeholder="Diskusi Proyek / Tawaran Kolaborasi"
+                       class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400">
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Pesan Anda</label>
+                <textarea id="contact-message" rows="4" required placeholder="Tuliskan pesan Anda di sini..."
+                          class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 resize-none"></textarea>
+              </div>
+
+              <button type="submit" 
+                      class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs sm:text-sm shadow-md shadow-indigo-500/20 transition-all flex items-center space-x-2">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+                <span>Kirim Pesan</span>
+              </button>
+            </form>
+
+            <!-- Success Toast Notification -->
+            <div id="contact-toast" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 text-xs sm:text-sm flex items-center space-x-3">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-base"></i>
+              <span>Terima kasih! Pesan Anda telah terkirim. Saya akan segera menghubungi Anda.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 text-center text-xs text-slate-400 dark:text-slate-600 border-t border-slate-200/60 dark:border-slate-800/80 no-print flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>&copy; 2026 Rizki Arda. Hak Cipta Dilindungi.</p>
+      <p class="flex items-center gap-1">
+        Hosted on GitHub Pages &bull; rizkiardapt.github.io
+      </p>
+    </footer>
+  </main>
+
+  <!-- ========================================================
+       MODAL: Project Detail Lightbox Preview
+       ======================================================== -->
+  <div id="portfolio-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto no-print">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-2xl w-full border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden my-8 relative">
+      
+      <!-- Close Button -->
+      <button id="modal-close-btn" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-slate-900/60 hover:bg-slate-900 text-white flex items-center justify-center transition" aria-label="Close modal">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <!-- Modal Image -->
+      <div class="h-64 sm:h-72 w-full overflow-hidden relative bg-slate-900">
+        <img id="modal-image" src="" alt="Project Preview" class="w-full h-full object-contain">
+        <span id="modal-category" class="absolute bottom-3 left-4 px-3 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white shadow"></span>
+      </div>
+
+      <!-- Modal Content -->
+      <div class="p-6 sm:p-8 space-y-5">
+        <div>
+          <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white"></h3>
+          <div class="flex items-center space-x-4 text-xs text-slate-500 dark:text-slate-400 mt-1.5">
+            <span><i class="fa-regular fa-calendar mr-1"></i> <span id="modal-date"></span></span>
+            <span><i class="fa-regular fa-user mr-1"></i> <span id="modal-client"></span></span>
+          </div>
+        </div>
+
+        <p id="modal-description" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+
+        <!-- Tech Stack -->
+        <div>
+          <h5 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Alat & Teknologi</h5>
+          <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Key Features -->
+        <div>
+          <h5 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Poin Penting</h5>
+          <ul id="modal-features" class="space-y-1.5"></ul>
+        </div>
+
+        <!-- Links -->
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-end space-x-3">
+          <a id="modal-github" href="https://github.com/rizkiarda" target="_blank" rel="noopener noreferrer" 
+             class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-xs transition flex items-center gap-1.5">
+            <i class="fa-brands fa-github"></i>
+            <span>Profil GitHub</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

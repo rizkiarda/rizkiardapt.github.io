@@ -1,0 +1,164 @@
+/* ========================================================
+   Mulan-inspired CV / Portfolio Custom Styles
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-light: #eef2ff;
+  --accent: #06b6d4;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Subtle background pattern */
+.bg-grid-pattern {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Card Glow Effect */
+.card-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px -10px rgba(79, 70, 229, 0.15);
+}
+.dark .card-glow:hover {
+  box-shadow: 0 14px 30px -10px rgba(99, 102, 241, 0.25);
+}
+
+/* Tab Animation */
+.tab-pane {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav Item Indicator */
+.nav-btn {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.nav-btn.active {
+  color: #4f46e5 !important;
+}
+.dark .nav-btn.active {
+  color: #818cf8 !important;
+}
+.nav-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  border-radius: 9999px;
+}
+
+/* Timeline Stylings */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -29px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #4f46e5;
+  background-color: #ffffff;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+.dark .timeline-item::before {
+  background-color: #1e293b;
+  border-color: #818cf8;
+}
+.timeline-item:hover::before {
+  background-color: #4f46e5;
+  transform: scale(1.2);
+}
+.dark .timeline-item:hover::before {
+  background-color: #818cf8;
+}
+
+/* Skill Progress Bars */
+.skill-bar-fill {
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Print Optimization (for Download as PDF) */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .no-print,
+  #theme-toggle,
+  #tab-navigation,
+  .nav-btn,
+  #contact-form,
+  .portfolio-filter,
+  #portfolio-modal {
+    display: none !important;
+  }
+  .tab-pane {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+    page-break-after: always;
+  }
+  .card-glow {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb !important;
+  }
+}
