@@ -195,6 +195,23 @@ function initPortfolioFilter() {
    5. Portfolio Modal (Preview Details)
    ---------------------------------------------------- */
 const projectData = {
+  'cert-fcc': {
+    title: 'Responsive Web Design Developer Certification',
+    category: 'Sertifikasi Internasional / freeCodeCamp',
+    date: '17 Juli 2025',
+    client: 'freeCodeCamp.org (Quincy Larson, Executive Director)',
+    image: 'assets/images/portfolio/cert_fcc_rwd.png',
+    description: 'Sertifikasi resmi penguasaan Responsive Web Design dari freeCodeCamp.org yang merepresentasikan kurikulum intensif ~300 jam pembelajaran dan pengerjaan 5 proyek web mandiri: Survey Form, Tribute Page, Technical Documentation Page, Product Landing Page, dan Personal Portfolio Webpage. Menguasai HTML5 semantik, modern CSS3, CSS Grid, Flexbox, media query responsif, serta kaidah Web Content Accessibility Guidelines (WCAG).',
+    techStack: ['HTML5', 'CSS3', 'Responsive Design', 'Flexbox', 'CSS Grid', 'Web Accessibility (a11y)'],
+    features: [
+      'Representasi ~300 jam kurikulum intensif dan proyek praktik coding mandiri',
+      'Penyelesaian 5 proyek aplikasi web responsif teruji sesuai spesifikasi W3C',
+      'Penerapan tata letak modern Flexbox, CSS Grid, dan Media Queries',
+      'Kredensial resmi terverifikasi secara global di platform freecodecamp.org'
+    ],
+    liveUrl: 'https://www.freecodecamp.org/certification/rizki_arda/responsive-web-design',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
   'psd-1': {
     title: 'Poster Kejuaraan Karate Terbuka Series I FORKI 2025',
     category: 'Design Grafis (PSD) / Event Poster',
