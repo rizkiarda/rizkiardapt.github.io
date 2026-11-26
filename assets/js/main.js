@@ -60,7 +60,7 @@ function initTypingEffect() {
     'Mobile App Developer',
     'UI / UX Designer (Figma)',
     'Graphic & Layout Designer',
-    'Mahasiswa Teknik Informatika UNU Kalbar'
+    'Mahasiswa Sistem Informasi UNU Kalbar'
   ];
 
   let wordIndex = 0;

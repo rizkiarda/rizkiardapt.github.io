@@ -1,6 +1,6 @@
 # Curriculum Vitae & Portfolio Online - Mulan Style
 
-Website CV & Portofolio interaktif, modern, dan responsif yang terinspirasi dari template **Mulan Resume / CV**, dirancang khusus untuk mahasiswa teknik informatika & mobile developer.
+Website CV & Portofolio interaktif, modern, dan responsif yang terinspirasi dari template **Mulan Resume / CV**, dirancang khusus untuk mahasiswa sistem informasi & mobile developer.
 
 ---
 
