@@ -195,6 +195,74 @@ function initPortfolioFilter() {
    5. Portfolio Modal (Preview Details)
    ---------------------------------------------------- */
 const projectData = {
+  'psd-1': {
+    title: 'Poster Kejuaraan Karate Terbuka Series I FORKI 2025',
+    category: 'Design Grafis (PSD) / Event Poster',
+    date: '2025',
+    client: 'FORKI Kota Pontianak & Disporapar Prov. Kalbar',
+    image: 'assets/images/portfolio/poster_karate_forki.jpg',
+    description: 'Desain poster promosi resmi Kejuaraan Karate Terbuka Series I FORKI Kota Pontianak 2025. Mengusung konsep visual dinamis dengan brush splatter effect, kombinasi foto atlet bertekstur monokrom, serta hierarki tipografi tegas untuk kategori usia tanding.',
+    techStack: ['Adobe Photoshop (PSD)', 'Graphic Design', 'Visual Hierarchy', 'Print CMYK'],
+    features: [
+      'Penerapan efek brush & texture splatter dinamis',
+      'Penataan hierarki informasi kategori kejuaraan (Pra Usia Dini s.d. Senior)',
+      'Integrasi logo resmi Pemkot Pontianak, Disporapar, KONI, FORKI, dan Mandiri',
+      'Layout standar publikasi media cetak & banner promosi digital'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  'psd-2': {
+    title: 'Banner Promosi Rumah Makan Masakan Padang Cahayo Minang',
+    category: 'Design Grafis (PSD) / Commercial Banner',
+    date: '2024',
+    client: 'Rumah Makan Cahayo Minang (Singkawang)',
+    image: 'assets/images/portfolio/banner_padang_cahayo.jpg',
+    description: 'Desain spanduk dan banner promosi komersial untuk rumah makan khas Minang "Cahayo Minang" di Jalan Veteran, Singkawang. Menampilkan ornamen etnik Rumah Gadang, foto hidangan kuliner beresolusi tinggi, badge promo harga Rp13.000, serta CTA nomor pemesanan yang kontras.',
+    techStack: ['Adobe Photoshop (PSD)', 'Advertising Design', 'Photo Manipulation', 'Outdoor Print'],
+    features: [
+      'Komposisi visual hidangan kuliner menggugah selera',
+      'Badge promosi mencolok (Paket Nasi Ayam 13RB)',
+      'Aksen latar belakang ornamen khas Minangkabau',
+      'Penempatan call-to-action (CTA) kontak WhatsApp dan titik lokasi yang jelas'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  'psd-3': {
+    title: 'Desain Cover & 3D Mockup Buku RPPM Kurikulum Merdeka',
+    category: 'Design Grafis (PSD) / Book & Editorial Cover',
+    date: '2025 / 2026',
+    client: 'Drs. Nurul Muhson, M.Pd (SMP Kelas IX)',
+    image: 'assets/images/portfolio/cover_buku_rppm.jpg',
+    description: 'Desain sampul buku dan visualisasi 3D mockup buku Rencana Pelaksanaan Pembelajaran Mendalam (RPPM) Mata Pelajaran PAI & Budi Pekerti SMP Kelas IX Tahun Ajaran 2025/2026. Menampilkan infografis alur tahapan pembelajaran (Identifikasi, Desain, Pengalaman, Asesmen) dan grid galeri aktivitas pembelajaran.',
+    techStack: ['Adobe Photoshop (PSD)', '3D Mockup', 'Editorial Layout', 'Educational Media'],
+    features: [
+      'Visualisasi 3D book mockup profesional dengan bayangan & pantulan realistis',
+      'Layout infografis terstruktur pada sampul belakang (4 Langkah RPPM)',
+      'Aksen geometris modern berpadu dengan logo resmi Kurikulum Merdeka',
+      'Format siap cetak standar penerbitan buku pendidikan nasional'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  'psd-4': {
+    title: 'Konten Media Sosial Edukasi Beasiswa LPDP (alf.id)',
+    category: 'Design Grafis (PSD) / Social Media Design',
+    date: '2024',
+    client: 'alf.id (Abroad Learning Fellowship)',
+    image: 'assets/images/portfolio/story_beasiswa_lpdp.jpg',
+    description: 'Desain konten visual format story Instagram vertikal (9:16) bertema edukasi beasiswa pascasarjana: "Keunggulan Beasiswa LPDP Selain Benefit Finance". Menghadirkan desain minimalis, tipografi clean, badge 3D medal, serta palet warna oranye khas identitas brand alf.id.',
+    techStack: ['Adobe Photoshop (PSD)', 'Social Media Design', 'Typography', 'Branding Kit'],
+    features: [
+      'Rasio aspek 9:16 (1080x1920) optimal untuk Instagram Stories & TikTok',
+      'Penataan tipografi teks bertingkat dengan keterbacaan tinggi di layar HP',
+      'Pemanfaatan elemen 3D badge penghargaan & latar belakang bokeh halus',
+      'Konsistensi identitas warna korporat brand edukasi'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
   1: {
     title: 'Food Delivery Mobile App',
     category: 'Mobile Application',
