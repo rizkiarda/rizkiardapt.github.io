@@ -57,10 +57,9 @@ function initTypingEffect() {
   if (!typingElement) return;
 
   const words = [
-    'Mobile App Developer',
-    'UI / UX Designer (Figma)',
-    'Graphic & Layout Designer',
-    'Mahasiswa Sistem Informasi UNU Kalbar'
+    'UI/UX Design & Prototyping',
+    'Editorial & Book Layout Design',
+    'Graphic & Brand Visual Design'
   ];
 
   let wordIndex = 0;
@@ -176,8 +175,8 @@ function initPortfolioFilter() {
       const filter = btn.getAttribute('data-filter');
 
       portfolioItems.forEach(item => {
-        const category = item.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
+        const categories = (item.getAttribute('data-category') || '').split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
           item.style.display = 'block';
           item.style.opacity = '0';
           setTimeout(() => {
@@ -280,19 +279,70 @@ const projectData = {
     liveUrl: '#',
     githubUrl: 'https://github.com/rizkiarda'
   },
-  1: {
-    title: 'Food Delivery Mobile App',
-    category: 'Mobile Application',
+  'uiux-1': {
+    title: 'Food Delivery App Interactive Prototype',
+    category: 'UI/UX & App Prototype',
     date: '2024',
-    client: 'Kuliah Pemrograman Mobile',
+    client: 'Proyek Perancangan Interaksi Mobile',
     image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=900&q=80',
-    description: 'Aplikasi mobile pemesanan makanan berbasis Android/Flutter dengan tampilan modern, katalog hidangan, keranjang belanja, serta simulasi checkout terintegrasi.',
-    techStack: ['Android', 'Java', 'Flutter', 'UI/UX', 'SQLite/REST API'],
+    description: 'Perancangan antarmuka dan purwarupa interaktif aplikasi pemesanan makanan berbasis mobile. Berfokus pada perancangan alur pemesanan (user flow), tata letak navigasi yang intuitif, arsitektur informasi menu kuliner, serta simulasi checkout dan pelacakan pesanan.',
+    techStack: ['Figma', 'UI/UX Design', 'Interactive Prototyping', 'User Flow', 'Design System'],
     features: [
-      'Antarmuka pengguna interaktif dan responsif',
-      'Katalog menu makanan berdasarkan kategori',
-      'Keranjang belanja dan kalkulasi total harga',
-      'Desain modern mengikuti pedoman Material Design'
+      'Perancangan alur pemesanan (user flow) dari pemilihan menu hingga checkout',
+      'Desain wireframe dan High-Fidelity Interactive Prototype',
+      'Penyusunan arsitektur informasi dan hierarki visual menu kuliner',
+      'Pengujian navigasi antarmuka berbasis kemudahan pengguna'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  'uiux-2': {
+    title: 'Studi Kasus UI/UX Aplikasi Edukasi Anak Interaktif (Skripsi)',
+    category: 'UI/UX Case Study & Penelitian',
+    date: '2024 - 2025',
+    client: 'Tugas Akhir / Skripsi - S1 Sistem Informasi UNU Kalbar',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80',
+    description: 'Riset dan perancangan antarmuka pengguna untuk aplikasi pembelajaran anak interaktif menggunakan metode User-Centered Design (UCD). Mengakomodasi karakteristik psikomotorik anak usia dini melalui navigasi visual ramah anak, pemilihan palet warna edukatif, serta mekanisme reward gamifikasi.',
+    techStack: ['Figma', 'User-Centered Design (UCD)', 'Wireframing', 'Interactive Prototype', 'Usability Testing (SUS)'],
+    features: [
+      'Riset kebutuhan pengguna (anak & pendamping) melalui observasi dan persona',
+      'Perancangan alur gamifikasi pembelajaran interaktif dengan feedback visual instan',
+      'Pembuatan design system khusus ramah anak (ikon besar, tipografi keterbacaan tinggi)',
+      'Evaluasi kegunaan sistem terukur dengan metode System Usability Scale (SUS)'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  'uiux-3': {
+    title: 'Perancangan Alur Sistem B2B: Order & Work Order Management',
+    category: 'System Analysis & PRD Documentation',
+    date: '2024',
+    client: 'Studi Kasus Analisis & Perancangan Sistem Informasi Bisnis',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
+    description: 'Analisis kebutuhan sistem dan dokumentasi spesifikasi produk (PRD) untuk pengelolaan rantai pesanan B2B hingga penerbitan surat perintah kerja operasional (Work Order). Menghubungkan proses approval antar departemen dengan dashboard backoffice terintegrasi.',
+    techStack: ['Product Requirement Document (PRD)', 'BPMN Process Flow', 'UML / Use Case Diagram', 'Database Schema (ERD)', 'Backoffice UI Design'],
+    features: [
+      'Pemetaan proses bisnis end-to-end menggunakan diagram BPMN & flowchart alur kerja',
+      'Penyusunan dokumen PRD lengkap: Functional Requirements, Non-Functional, & User Stories',
+      'Perancangan skema relasi basis data (ERD) untuk status Order dan Work Order',
+      'Rancangan purwarupa antarmuka dashboard monitoring tim operasional di Figma'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/rizkiarda'
+  },
+  1: {
+    title: 'Food Delivery App Interactive Prototype',
+    category: 'UI/UX & App Prototype',
+    date: '2024',
+    client: 'Proyek Perancangan Interaksi Mobile',
+    image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=900&q=80',
+    description: 'Perancangan antarmuka dan purwarupa interaktif aplikasi pemesanan makanan berbasis mobile. Berfokus pada perancangan alur pemesanan (user flow), tata letak navigasi yang intuitif, arsitektur informasi menu kuliner, serta simulasi checkout dan pelacakan pesanan.',
+    techStack: ['Figma', 'UI/UX Design', 'Interactive Prototyping', 'User Flow', 'Design System'],
+    features: [
+      'Perancangan alur pemesanan (user flow) dari pemilihan menu hingga checkout',
+      'Desain wireframe dan High-Fidelity Interactive Prototype',
+      'Penyusunan arsitektur informasi dan hierarki visual menu kuliner',
+      'Pengujian navigasi antarmuka berbasis kemudahan pengguna'
     ],
     liveUrl: '#',
     githubUrl: 'https://github.com/rizkiarda'
